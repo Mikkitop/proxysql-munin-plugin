@@ -93,7 +93,7 @@ class Graph implements MuninPrintable {
 
     public function config() {
         echo sprintf(
-                implode([$this->key.".label %s\n", $this->key.".type %s\n", $this->key.".min %s\n"], ""),
+                implode("", [$this->key.".label %s\n", $this->key.".type %s\n", $this->key.".min %s\n"]),
                 $this->label, $this->type, $this->min
             );
     }
